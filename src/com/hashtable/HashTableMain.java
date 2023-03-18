@@ -6,12 +6,12 @@ public class HashTableMain {
 
         System.out.println("Welcome to the HashTable Program. ");
         HashTable table = new HashTable(10);
-        String sentence = "To be or not to be";
-        String[] words = sentence.split(" ");
+        String paragraph = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
+        String[] words = paragraph.split(" "); // Separating each and every word by space ( )
         for (String word : words) {
             table.put(word, 1);
         }
-        int frequency = table.get("be");
-        System.out.println("Frequency of 'be': " + frequency);
+        int frequency = table.get("paranoid");
+        System.out.println("Frequency of 'paranoid': " + frequency);
     }
 }
