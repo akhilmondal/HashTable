@@ -11,7 +11,9 @@ public class HashTableMain {
         for (String word : words) {
             table.put(word, 1);
         }
+        table.remove("avoidable");
         int frequency = table.get("paranoid");
         System.out.println("Frequency of 'paranoid': " + frequency);
+        System.out.println(paragraph);
     }
 }
