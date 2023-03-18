@@ -45,5 +45,15 @@ public class HashTable {
         }
         return 0;
     }
+    public void remove(String key) {
+        int hash = getHash(key);
+        LinkedList<MyMapNode> list = table[hash];
+        for (MyMapNode node : list) {
+            if (node.getKey().equals(key)) {
+                list.remove(node);
+            }
+        }
+    }
+
 }
 
